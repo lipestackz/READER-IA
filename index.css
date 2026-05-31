@@ -1,0 +1,181 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.phone{
+  width:340px;
+  height:700px;
+  background:#111827;
+  border-radius:35px;
+  padding:20px;
+  position:relative;
+  overflow:hidden;
+  border:4px solid #1e293b;
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.logo{
+  color:white;
+  font-size:30px;
+}
+
+.logo span{
+  color:#6366f1;
+}
+
+.notification{
+  color:white;
+  font-size:20px;
+}
+
+.camera-box{
+  width:100%;
+  height:260px;
+  border:3px dashed #6366f1;
+  border-radius:25px;
+  background:#1e293b;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  color:white;
+  transition:0.3s;
+}
+
+.camera-box.active{
+  border-color:#22c55e;
+  box-shadow:0 0 20px #22c55e;
+}
+
+.camera-icon{
+  font-size:70px;
+  margin-bottom:10px;
+}
+
+.camera-box p{
+  text-align:center;
+  opacity:0.8;
+}
+
+.scan-btn{
+  width:100%;
+  padding:16px;
+  margin-top:20px;
+  border:none;
+  border-radius:18px;
+  background:#6366f1;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.scan-btn:hover{
+  background:#4f46e5;
+  transform:scale(1.02);
+}
+
+.result{
+  margin-top:20px;
+  background:#1e293b;
+  padding:18px;
+  border-radius:20px;
+  color:white;
+  animation:fade 0.5s ease;
+}
+
+.result h2{
+  color:#818cf8;
+  margin-bottom:10px;
+}
+
+.result p{
+  line-height:24px;
+  opacity:0.9;
+}
+
+.difficulty{
+  margin-top:15px;
+  background:#312e81;
+  padding:10px;
+  border-radius:12px;
+}
+
+.support{
+  margin-top:20px;
+  background:#312e81;
+  padding:15px;
+  border-radius:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+}
+
+.support button{
+  border:none;
+  background:white;
+  color:#312e81;
+  padding:10px 15px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.bottom-nav{
+  position:absolute;
+  bottom:15px;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  color:white;
+}
+
+.nav-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:13px;
+  opacity:0.7;
+}
+
+.nav-item.active{
+  opacity:1;
+  color:#818cf8;
+}
+
+.hidden{
+  display:none;
+}
+
+@keyframes fade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

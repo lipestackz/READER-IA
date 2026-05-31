@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReaderIA</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div class="phone">
+
+    <header class="top">
+      <h1 class="logo">Reader<span>IA</span></h1>
+      <div class="notification">🔔</div>
+    </header>
+
+    <section class="camera-box" id="cameraBox">
+      <div class="camera-icon">📷</div>
+
+      <p>
+        Aponte a câmera para o código de erro
+      </p>
+    </section>
+
+    <button class="scan-btn" id="scanBtn">
+      Escanear erro
+    </button>
+
+    <section class="result hidden" id="resultBox">
+      <h2 id="errorTitle"></h2>
+
+      <p id="errorDescription"></p>
+
+      <div class="difficulty">
+        <span>Dificuldade:</span>
+        <strong id="difficultyText"></strong>
+      </div>
+    </section>
+
+    <section class="support">
+      <div>
+        <h3>Precisa de ajuda?</h3>
+        <p>Fale com um especialista</p>
+      </div>
+
+      <button id="callBtn">
+        Ligar
+      </button>
+    </section>
+
+    <nav class="bottom-nav">
+
+      <div class="nav-item active">
+        🏠
+        <span>Home</span>
+      </div>
+
+      <div class="nav-item">
+        📖
+        <span>Histórico</span>
+      </div>
+
+      <div class="nav-item">
+        🤖
+        <span>IA</span>
+      </div>
+
+      <div class="nav-item">
+        ⚙️
+        <span>Config</span>
+      </div>
+
+    </nav>
+
+  </div>
+
+  <script src="./js/index.js"></script>
+
+</body>
+</html>
